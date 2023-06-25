@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 
 url = "https://google-translate1.p.rapidapi.com/language/translate/v2/detect"
+api_key = "YOUR_API_KEY"  # Replace with your own RapidAPI key
 
 st.title("Language Detection Web App")
 text = st.text_input("Enter a text string")
@@ -11,7 +12,7 @@ if st.button("Detect Language"):
     headers = {
         "content-type": "application/x-www-form-urlencoded",
         "Accept-Encoding": "application/gzip",
-        "X-RapidAPI-Key": "e748b4cd16msh9dd4559f4e0a57ep193447jsnb3edf9984648",
+        "X-RapidAPI-Key": api_key,
         "X-RapidAPI-Host": "google-translate1.p.rapidapi.com"
     }
 
@@ -32,4 +33,3 @@ if st.button("Detect Language"):
             st.warning("No language detected.")
     else:
         st.error("Error occurred. Please try again.")
-
