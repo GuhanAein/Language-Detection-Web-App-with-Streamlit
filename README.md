@@ -125,8 +125,8 @@ And the code for languages are:
 You can use this and use your Google Translate API Key and you can obtain it from rapid API from where i got that
 
 Requirements:
-streamlit : pip install steamlit
-requests : pip install requests
+-streamlit : pip install steamlit
+-requests : pip install requests
 
 
 Usage
